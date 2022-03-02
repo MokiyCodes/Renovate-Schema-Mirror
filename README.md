@@ -1,5 +1,5 @@
 # Renovate-Schema-Mirror
-Mirror's Renovate's [Config Schema](https://docs.renovatebot.com/renovate-schema.json).
+[Mirrors](https://mokiycodes.github.io/Renovate-Schema-Mirror/schema.json) Renovate's [Config Schema](https://docs.renovatebot.com/renovate-schema.json).
 
 ## Why?
 1. To be able to detect schema changes, and;
