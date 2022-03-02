@@ -24,6 +24,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Fetch Config
         run: curl https://docs.renovatebot.com/renovate-schema.json -o schema.json
+        
+      - name: Add Files to Git
+        run: git add .
 
       # Runs a set of commands using the runners shell
       - name: Commit Changes
