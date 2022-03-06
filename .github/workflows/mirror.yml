@@ -24,13 +24,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Fetch Config
         run: curl https://docs.renovatebot.com/renovate-schema.json -o schema.json
-        
+
       - name: Add Files to Git
         run: git add .
 
       - name: Configure User
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "mirror@wafflepowered.com"
           git config --local user.name "mokiy-actions[bot]"
       - name: Commit Changes
         run: |
