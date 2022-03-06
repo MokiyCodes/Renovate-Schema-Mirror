@@ -34,6 +34,7 @@ jobs:
           git config --local user.name "mokiy-actions[bot]"
       - name: Commit Changes
         run: |
+          echo -e ".gitignore\ncommit.sh" > .gitignore
           echo -e "git commit -m \"chore: Update Renovate Schema\" -a\nexit 0" > commit.sh
           chmod +x commit.sh
           ./commit.sh
