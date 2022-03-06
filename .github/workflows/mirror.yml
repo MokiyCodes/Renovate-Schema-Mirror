@@ -28,12 +28,16 @@ jobs:
       - name: Add Files to Git
         run: git add .
 
-      # Runs a set of commands using the runners shell
-      - name: Commit Changes
+      - name: Configure User
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "mokiy-actions[bot]"
-          git commit -m "chore: Update Renovate Schema" -a
+      - name: Commit Changes
+        run: |
+          echo "git commit -m \"chore: Update Renovate Schema\" -a\nexit 0" > commit.sh
+          chmod +x commit.sh
+          ./commit.sh
+          rm commit.sh
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
