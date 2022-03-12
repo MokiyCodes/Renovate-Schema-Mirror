@@ -1,0 +1,8 @@
+{
+  "notice": "This isn't the schema, this just tells renovate to run on this",
+  "extends": [
+    "github>MokiyCodes/MokiyCodes//cfg/renovate",
+    ":automergePr",
+    ":automergeAll"
+  ]
+}
