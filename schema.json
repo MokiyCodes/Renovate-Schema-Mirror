@@ -805,7 +805,7 @@
       "type": "string"
     },
     "gitTimeout": {
-      "description": "Configure the timeout with a number of milliseconds to wait for a git task",
+      "description": "Configure the timeout with a number of milliseconds to wait for a Git task.",
       "type": "integer",
       "default": 10000
     },
