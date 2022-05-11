@@ -558,7 +558,7 @@
       "type": "object",
       "default": {
         "fileMatch": [
-          "(^|/)docker-compose[^/]*\\.ya?ml$"
+          "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
         ]
       },
       "$ref": "#"
