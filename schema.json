@@ -583,7 +583,7 @@
       "default": {
         "fileMatch": [
           "(^|/|\\.)Dockerfile$",
-          "(^|/)Dockerfile\\.[^/]*$"
+          "(^|/)Dockerfile[^/]*$"
         ]
       },
       "$ref": "#"
