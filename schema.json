@@ -2538,6 +2538,16 @@
       "description": "Username for authentication.",
       "type": "string"
     },
+    "velaci": {
+      "description": "Configuration object for the velaci manager",
+      "type": "object",
+      "default": {
+        "fileMatch": [
+          "(^|/).vela.ya?ml$"
+        ]
+      },
+      "$ref": "#"
+    },
     "versioning": {
       "description": "Versioning to use for filtering and comparisons.",
       "type": "string",
