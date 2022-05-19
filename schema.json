@@ -2224,9 +2224,14 @@
       "default": "disabled"
     },
     "requireConfig": {
-      "description": "Set to `false` if it is optional for repositories to contain a config.",
-      "type": "boolean",
-      "default": true
+      "description": "Controls Renovate's behavior regarding repository config files such as `renovate.json`.",
+      "type": "string",
+      "enum": [
+        "required",
+        "optional",
+        "ignored"
+      ],
+      "default": "required"
     },
     "respectLatest": {
       "description": "Ignore versions newer than npm \"latest\" version.",
@@ -2556,6 +2561,7 @@
         "cargo",
         "composer",
         "conan",
+        "debian",
         "docker",
         "git",
         "gradle",
