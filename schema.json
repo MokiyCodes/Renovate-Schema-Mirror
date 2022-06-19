@@ -220,6 +220,17 @@
       },
       "$ref": "#"
     },
+    "bazelisk": {
+      "description": "Configuration object for the bazelisk manager",
+      "type": "object",
+      "default": {
+        "fileMatch": [
+          "(^|\\/)\\.bazelversion$"
+        ],
+        "pinDigests": false
+      },
+      "$ref": "#"
+    },
     "bbUseDefaultReviewers": {
       "description": "Use the default reviewers (Bitbucket only).",
       "type": "boolean",
