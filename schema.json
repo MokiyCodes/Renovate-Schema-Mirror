@@ -2029,7 +2029,7 @@
       "$ref": "#"
     },
     "printConfig": {
-      "description": "If enabled, Renovate logs the fullly resolved config for each repo, plus the fully resolved presets.",
+      "description": "If enabled, Renovate logs the fully resolved config for each repo, plus the fully resolved presets.",
       "type": "boolean",
       "default": false
     },
