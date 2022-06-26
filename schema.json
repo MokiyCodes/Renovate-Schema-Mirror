@@ -300,7 +300,8 @@
       "enum": [
         "major",
         "minor",
-        "patch"
+        "patch",
+        "prerelease"
       ]
     },
     "bundler": {
@@ -533,7 +534,7 @@
       "type": "object",
       "default": {
         "fileMatch": [
-          "(^|/)deps\\.edn$"
+          "(^|/)(?:deps|bb)\\.edn$"
         ],
         "versioning": "maven"
       },
